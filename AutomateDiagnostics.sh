@@ -63,10 +63,10 @@ lastcontact=$(echo "$month/$day_of_month/$year $hour:$min:$sec")
 lterrors=""
 log_file="/usr/local/ltechagent/agent.log"
 
-if [ -f "$log_file" ]; then
-    lterrors_str=$(sed -e 's/&/\&amp;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g' -e 's/"/\&quot;/g' -e "s/'/\&apos;/g" "$log_file")
-    lterrors=$(echo "$lterrors_str" | base64)
-fi
+#if [ -f "$log_file" ]; then
+#    lterrors_str=$(sed -e 's/&/\&amp;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g' -e 's/"/\&quot;/g' -e "s/'/\&apos;/g" "$log_file")
+#    lterrors=$(echo "$lterrors_str" | base64)
+#fi
 
 json=$(
     cat <<EOF
