@@ -37,7 +37,7 @@ old_version=$(convertFromJson "$data" 'version')
 # Read state file for info
 data=$(cat /usr/local/ltechagent/state)
 
-new_version=$(convertFromJson "$data" 'version')
+new_version="230.024"
 if [ "$old_version" != "$new_version" ]; then
     update="Updated from $old_version to $new_version"
 else
