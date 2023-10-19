@@ -39,7 +39,7 @@ data=$(cat /usr/local/ltechagent/state)
 
 new_version="230.024"
 if [ "$old_version" != "$new_version" ]; then
-    update="Updated from $old_version to $new_version"
+    update="Current agent $old_version is not $new_version"
 else
     update="Already updated to $new_version"
 fi
